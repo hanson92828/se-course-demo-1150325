@@ -5,7 +5,7 @@ app = FastAPI()
 def add_func(a: float,b: float) -> float:
     return a+b
 
-# ------------
+# -------------
 
 @app.get("/")
 def home():
