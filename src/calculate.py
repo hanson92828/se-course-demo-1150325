@@ -21,7 +21,7 @@ def calculate_add(a: float, b: float):
     return {"operation": "addition", "a": a, "b": b, "result": result}
 
 @app.get("/sub")
-def calculate_sub(a: float, b: float):
+def calculate_sub(a,b):
     # sub_func
     result = sub_func(a, b)
     return {"operation": "substraction", "a": a, "b": b, "result": result}
