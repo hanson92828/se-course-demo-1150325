@@ -8,6 +8,9 @@ def add_func(a: float,b: float) -> float:
 def sub_func(a,b):
     return a-b
 
+def mutfunction(a,b):
+    return a-b
+
 # -------------
 
 @app.get("/")
@@ -25,3 +28,9 @@ def calculate_sub(a,b):
     # sub_func
     result = sub_func(a, b)
     return {"operation": "substraction", "a": a, "b": b, "result": result}
+
+@app.get("/mut")
+def calculate_mut(a,b):
+    # mut_func
+    result = mutfunction(a, b)
+    return {"operation": "multiple", "a": a, "b": b, "result": result}
