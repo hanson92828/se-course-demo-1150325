@@ -9,7 +9,7 @@ def sub_func(a,b):
     return a-b
 
 def mut_func(a,b):
-    temp = 100 # non-use
+    # temp = 100 # non-use, ruff會報錯
     return a-b
 
 # -------------
