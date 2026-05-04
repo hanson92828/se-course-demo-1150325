@@ -6,10 +6,10 @@ quote-style = "double"
 indent-style = "space"
 
 [tool.ruff.lint]
-select = ["E", "F", "B"] # 檢查語法錯誤 (E/F) 與 常見 Bug (B) // 其他type要確定
+select = ["E", "F", "B"] # 檢查語法錯誤 (E/F) 與 常見 Bug (B)
 
 [tool.mypy]
-python_version = "3.10"
+python_version = "3.9"
 warn_return_any = true
 ignore_missing_imports = true
 
