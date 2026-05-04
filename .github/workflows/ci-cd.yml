@@ -26,6 +26,9 @@ jobs:
           
       - name: Static Analysis (Linting)
         run: ruff check src/
+
+      - name: Check Formatting (Black)
+        run: black --check --diff src/
         
       - name: Type Checking (Mypy)
         run: mypy src/
